@@ -126,21 +126,20 @@ syn keyword cssGeneratedContentProp contained content quotes
 syn match cssGeneratedContentProp contained "\<counter-\(reset\|increment\)\>"
 syn match cssGeneratedContentProp contained "\<list-style\(-\(type\|position\|image\)\)\=\>"
 syn match cssGeneratedContentAttr contained "\<\(no-\)\=\(open\|close\)-quote\>"
-syn match cssAuralAttr contained "\<lower\>"
 syn match cssGeneratedContentAttr contained "\<\(lower\|upper\)-\(roman\|alpha\|greek\|latin\)\>"
 syn match cssGeneratedContentAttr contained "\<\(hiragana\|katakana\)\(-iroha\)\=\>"
 syn match cssGeneratedContentAttr contained "\<\(decimal\(-leading-zero\)\=\|cjk-ideographic\)\>"
 syn keyword cssGeneratedContentAttr contained disc circle square hebrew armenian georgian
 syn keyword cssGeneratedContentAttr contained inside outside
 
-syn match cssPagingProp contained "\<page\(-break-\(before\|after\|inside\)\)\=\>"
-syn keyword cssPagingProp contained size marks inside orphans widows
-syn keyword cssPagingAttr contained landscape portrait crop cross always avoid
+syn match cssPagingProp contained "\<page-break-\(before\|after\|inside\)\>"
+syn keyword cssPagingProp contained orphans widows
+syn keyword cssPagingAttr contained always avoid
 
 syn keyword cssUIProp contained cursor
 syn match cssUIProp contained "\<outline\(-\(width\|style\|color\)\)\=\>"
 syn match cssUIAttr contained "\<[ns]\=[ew]\=-resize\>"
-syn keyword cssUIAttr contained default crosshair pointer move wait help
+syn keyword cssUIAttr contained default crosshair pointer move text wait help progress
 syn keyword cssUIAttr contained thin thick
 syn keyword cssUIAttr contained dotted dashed solid double groove ridge inset outset
 syn keyword cssUIAttr contained invert
@@ -151,14 +150,16 @@ syn keyword cssRenderProp contained position top bottom direction
 syn match cssRenderProp contained "\<\(left\|right\)\>"
 syn keyword cssRenderAttr contained block inline compact
 syn match cssRenderAttr contained "\<\(inline-\(block\|table\)\|run-in\|list-item\)\>"
-syn match cssRenderAttr contained "\<table\(-\(row-gorup\|\(header\|footer\)-group\|row\|column\(-group\)\=\|cell\|caption\)\)\=\>"
+syn match cssRenderAttr contained "\<table\(-\(\(header\|footer\)-group\|row\(-group\)\=\|column\(-group\)\=\|cell\|caption\)\)\=\>"
 syn keyword cssRenderAttr contained static relative absolute fixed
-syn keyword cssRenderAttr contained ltr rtl embed bidi-override pre nowrap
+syn keyword cssRenderAttr contained ltr rtl embed bidi-override nowrap
+syn match cssRenderAttr contained "\<pre\(-\(wrap\|line\)\)\=\>"
 syn match cssRenderAttr contained "\<bidi-override\>"
 
 syn match cssAuralProp contained "\<\(pause\|cue\)\(-\(before\|after\)\)\=\>"
-syn match cssAuralProp contained "\<\(play-during\|speech-rate\|voice-family\|pitch\(-range\)\=\|speak\(-\(punctuation\|numerals\)\)\=\)\>"
-syn keyword cssAuralProp contained volume during azimuth elevation stress richness
+syn match cssAuralProp contained "\<\(play-during\|speech-rate\|voice-family\|pitch\(-range\)\=\|speak\(-\(punctuation\|numeral\|header\)\)\=\)\>"
+syn keyword cssAuralProp contained volume during azimuth elevation pitch stress richness
+syn match cssAuralAttr contained "\<lower\>"
 syn match cssAuralAttr contained "\<\(x-\)\=\(soft\|loud\)\>"
 syn keyword cssAuralAttr contained silent
 syn match cssAuralAttr contained "\<spell-out\>"
@@ -168,10 +169,11 @@ syn match cssAuralAttr contained "\<\(far\|center\)-\(left\|center\|right\)\>"
 syn keyword cssAuralAttr contained leftwards rightwards behind
 syn keyword cssAuralAttr contained below level above higher
 syn match cssAuralAttr contained "\<\(x-\)\=\(slow\|fast\)\>"
+syn match cssAuralAttr contained "\<\(x-\)\=\(low\|high\)\>"
 syn keyword cssAuralAttr contained faster slower
 syn keyword cssAuralAttr contained male female child code digits continuous
 
-syn match cssTableProp contained "\<\(caption-side\|table-layout\|border-collapse\|border-spacing\|empty-cells\|speak-header\)\>"
+syn match cssTableProp contained "\<\(caption-side\|table-layout\|border-collapse\|border-spacing\|empty-cells\)\>"
 syn keyword cssTableAttr contained fixed collapse separate show hide once always
 
 " FIXME: This allows cssMediaBlock before the semicolon, which is wrong.
