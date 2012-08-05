@@ -5,6 +5,7 @@ Vim's built-in `syntax/css.vim` has some bugs and some of these bugs cannot be f
 
   * `object` element is missing
   * `sans-serif` cannot be highlighted when `set iskeyword+=-`
+  * `background-repeat` property is missing
   * `contained` argument is missing in one of the `cssTextProp`
   * `inline-block` value is missing
   * `run-in`, `inline-table`, and `list-item` are not `cssRenderProp`, are `cssRenderAttr`
