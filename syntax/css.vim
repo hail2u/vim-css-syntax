@@ -79,7 +79,7 @@ syn match cssColor contained "#[0-9A-Fa-f]\{3\}\>"
 syn match cssColor contained "#[0-9A-Fa-f]\{6\}\>"
 "syn match cssColor contained "\<rgb\s*(\s*\d\+\(\.\d*\)\=%\=\s*,\s*\d\+\(\.\d*\)\=%\=\s*,\s*\d\+\(\.\d*\)\=%\=\s*)"
 syn region cssURL contained matchgroup=cssFunctionName start="\<url\s*(" end=")" oneline keepend
-syn region cssFunction contained matchgroup=cssFunctionName start="\<\(rgb\|clip\|attr\|counter\|rect\)\s*(" end=")" oneline keepend
+syn region cssFunction contained matchgroup=cssFunctionName start="\<\(rgb\|attr\|counter\|rect\)\s*(" end=")" oneline keepend
 
 syn match cssImportant contained "!\s*important\>"
 
