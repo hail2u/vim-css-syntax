@@ -512,3 +512,24 @@ var {
     display: auto;
   }
 }
+
+.values {
+  display: 1;
+  display: 1.1;
+  display: 1%;
+  display: 1mm;
+  display: 1cm;
+  display: 1in;
+  display: 1pt;
+  display: 1pc;
+  display: 1em;
+  display: 1ex;
+  display: 1px;
+  display: 1deg;
+  display: 1grad;
+  display: 1rad;
+  display: 1ms;
+  display: 1s;
+  display: 1Hz;
+  display: 1kHz;
+}
