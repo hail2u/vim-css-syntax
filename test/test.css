@@ -533,3 +533,24 @@ var {
   display: 1Hz;
   display: 1kHz;
 }
+
+@font-face {
+  unicode-range: U+0000-U+FF00, U+FF01+U+FFFF;
+  unit-per-em: local("Font") format("opentype");
+  src: auto;
+  panose-1: auto;
+  stemv: auto;
+  stemh: auto;
+  slope: auto;
+  cap-height: auto;
+  x-height: auto;
+  ascent: auto;
+  descent: auto;
+  widths: auto;
+  bbox: auto;
+  definition-src: auto;
+  baseline: auto;
+  centerline: auto;
+  mathline: auto;
+  topline: auto;
+}
