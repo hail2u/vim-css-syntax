@@ -46,7 +46,7 @@ catch /^.*/
 endtry
 
 syn match cssMedia "@media\>" nextgroup=cssMediaType skipwhite skipnl
-syn keyword cssMediaType contained screen print aural braile embosed handheld projection ty tv all nextgroup=cssMediaComma,cssMediaBlock skipwhite skipnl
+syn keyword cssMediaType contained screen print aural braille embossed handheld projection tty tv all nextgroup=cssMediaComma,cssMediaBlock skipwhite skipnl
 syn match cssMediaComma "," nextgroup=cssMediaType skipwhite skipnl
 syn region cssMediaBlock transparent matchgroup=cssBraces start='{' end='}' contains=cssTagName,cssError,cssComment,cssDefinition,cssURL,cssUnicodeEscape,cssIdentifier
 
