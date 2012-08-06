@@ -3,6 +3,7 @@ vim-css-syntax
 
 Vim's built-in `syntax/css.vim` has some bugs and some of these bugs cannot be fixed with `after/syntax/css.vim`. This patched syntax file fixes all bugs I know:
 
+  * `braile`, `embosed`, and `ty` are typo
   * `clip()` function is deprecated
   * `page`, `size`, `marks`, and `inside` are not valid properties
   * `landscape`, `portrait`, `crop`, and `cross` are not valid values
