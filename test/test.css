@@ -506,3 +506,9 @@ var {
   display: "Quote \"in\" quote.";
   display: 'Quote \'in\' quote.';
 }
+
+@media all, screen, print, aural, braille, embossed, handheld, projection, tty, tv {
+  .media {
+    display: auto;
+  }
+}
