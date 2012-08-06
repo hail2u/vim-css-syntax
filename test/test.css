@@ -389,6 +389,55 @@ div#myid {
   display: smaller;
 }
 
+.colors {
+  display: aqua;
+  display: black;
+  display: blue;
+  display: fuchsia;
+  display: gray;
+  display: green;
+  display: lime;
+  display: maroon;
+  display: navy;
+  display: olive;
+  display: purple;
+  display: red;
+  display: silver;
+  display: teal;
+  display: yellow;
+  display: white
+  display: ActiveBorder;
+  display: ActiveCaption;
+  display: AppWorkspace;
+  display: ButtonFace;
+  display: ButtonHighlight;
+  display: ButtonShadow;
+  display: ButtonText;
+  display: CaptionText;
+  display: GrayText;
+  display: Highlight;
+  display: HighlightText;
+  display: InactiveBorder;
+  display: InactiveCaption;
+  display: InactiveCaptionText;
+  display: InfoBackground;
+  display: InfoText;
+  display: Menu;
+  display: MenuText;
+  display: Scrollbar;
+  display: ThreeDDarkShadow;
+  display: ThreeDFace;
+  display: ThreeDHighlight;
+  display: ThreeDLightShadow;
+  display: ThreeDShadow;
+  display: Window;
+  display: WindowFrame;
+  display: WindowText;
+  display: Background;
+  display: #fed;
+  display: #abcdef;
+}
+
 .url {
   display: url("http://example.com/");
 }
