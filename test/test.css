@@ -335,17 +335,16 @@
   display: text-bottom;
   display: text-top;
   display: top;
-  display: transparent;
   display: underline;
   display: upper-alpha;
   display: upper-latin;
   display: upper-roman;
   display: uppercase;
   display: visible;
+  display: w-resize;
 }
 
 .values {
-  display: w-resize;
   display: wait;
   display: x-fast;
   display: x-high;
@@ -390,6 +389,7 @@ div#myid {
 }
 
 .colors {
+  display: transparent;
   display: aqua;
   display: black;
   display: blue;
@@ -436,6 +436,7 @@ div#myid {
   display: Background;
   display: #fed;
   display: #abcdef;
+  display: rgb(0, 0, 0);
 }
 
 .url {
@@ -443,7 +444,6 @@ div#myid {
 }
 
 .functions {
-  display: rgb(0, 0, 0);
   display: attr(href);
   display: counter(foo);
   display: rect(0px, 0px, 10px, 10px);
