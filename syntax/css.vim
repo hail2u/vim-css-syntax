@@ -20,6 +20,12 @@ endif
 
 syn case ignore
 
+" if version >= 600
+"   setlocal iskeyword=-
+" else
+"   set iskeyword=-
+" endif
+
 syn keyword cssTagName abbr acronym address applet area a b base
 syn keyword cssTagName basefont bdo big blockquote body br button
 syn keyword cssTagName caption center cite code col colgroup dd del
